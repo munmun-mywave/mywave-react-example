@@ -1,7 +1,5 @@
 /*eslint-disable */
 
-import React from 'react';
-
 import Root from './src/components/Root';
 import Layout from './src/components/Layout';
 import './src/styles/reset.css';
