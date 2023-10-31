@@ -1,7 +1,7 @@
-import { combineReducers } from 'redux';
-
 import defaultReducer from './defaultReducer';
+import nextReducer from './nextReducer';
 
-export default combineReducers({
+export default {
   defaultReducer,
-});
+  nextReducer,
+};

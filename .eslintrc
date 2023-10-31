@@ -1,11 +1,10 @@
 {
   "env": {
-    "browser": true,
-    "jest": true
+    "browser": true
   },
   "plugins": ["react-redux"],
   "parser": "@babel/eslint-parser",
-  "extends": ["airbnb", "prettier", "plugin:react-redux/recommended"],
+  "extends": ["airbnb", "prettier", "plugin:react/jsx-runtime", "plugin:react-redux/recommended"],
   "rules": {
     "react/function-component-definition": "off",
     "react/jsx-no-useless-fragment": "off",
@@ -16,10 +15,11 @@
       "error",
       {
         "required": {
-          "some": ["nesting", "id"]
+          "some": ["nesting", "id"] 
         }
       }
     ],
+    "default-param-last": "off",
     "comma-dangle": [
       "error",
       {

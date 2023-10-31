@@ -1,11 +1,19 @@
-import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
+const Container = styled.div`
+  font-size: 17px;
+
+  & h1 {
+    font-size: 20px;
+  }
+`;
+
 const LayoutComponent = ({ children }) => (
-  <div>
-    <h1>Welcome to SGCC Gatsby Default Starter</h1>
+  <Container>
+    <h1>Welcome to Mywave React Example (Incomplete)</h1>
     {children}
-  </div>
+  </Container>
 );
 
 LayoutComponent.propTypes = {
