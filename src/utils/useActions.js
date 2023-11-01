@@ -13,7 +13,7 @@ const useActions = (actions, deps = []) => {
   const dispatch = useDispatch();
 
   return useMemo(
-    () => actions.map(action => bindActionCreators(action, dispatch)),
+    () => actions.map((action) => bindActionCreators(action, dispatch)),
     [dispatch, ...deps]
   );
 };
